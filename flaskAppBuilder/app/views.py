@@ -1,11 +1,10 @@
 from flask import render_template
 from flask_appbuilder.models.sqla.interface import SQLAInterface
 from flask_appbuilder import ModelView, ModelRestApi
-from app import app
+from flask import app
 from . import appbuilder, db
 
-from .models import  ServicioTecnico,Camiones,Clientes,Saldos,Localidad
-
+from flask_appbuilder.models import  ServicioTecnico,Camiones,Clientes,Saldos,Localidad
 
 
 class SaldosView(ModelView):
